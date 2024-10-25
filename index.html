@@ -1,117 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Rose Animation</title>
-  <style>
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background-color: #f5f5f5;
-      margin: 0;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Rose Container */
-    .rose {
-      position: relative;
-      width: 120px;
-      height: 120px;
-      animation: bloom 3s ease-in-out forwards;
-    }
-
-    /* Petals */
-    .petal {
-      position: absolute;
-      width: 60px;
-      height: 60px;
-      background-color: #e91e63;
-      border-radius: 50%;
-      transform-origin: bottom right;
-      opacity: 0.8;
-      animation: petalAnimation 2s ease infinite alternate;
-    }
-
-    /* Explicitly set transform for each petal */
-    .petal:nth-child(1) {
-      transform: rotate(0deg) translate(30px) scale(1);
-    }
-    .petal:nth-child(2) {
-      transform: rotate(60deg) translate(30px) scale(1);
-    }
-    .petal:nth-child(3) {
-      transform: rotate(120deg) translate(30px) scale(1);
-    }
-    .petal:nth-child(4) {
-      transform: rotate(180deg) translate(30px) scale(1);
-    }
-    .petal:nth-child(5) {
-      transform: rotate(240deg) translate(30px) scale(1);
-    }
-    .petal:nth-child(6) {
-      transform: rotate(300deg) translate(30px) scale(1);
-    }
-
-    /* Center of the Rose */
-    .center {
-      position: absolute;
-      top: 40px;
-      left: 40px;
-      width: 40px;
-      height: 40px;
-      background-color: #c2185b;
-      border-radius: 50%;
-      z-index: 1;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-      animation: bloom 2s ease forwards;
-    }
-
-    /* Bloom Animation */
-    @keyframes bloom {
-      0% { transform: scale(0); }
-      100% { transform: scale(1); }
-    }
-
-    /* Petal Animation */
-    @keyframes petalAnimation {
-      0% { transform: scale(0.95); }
-      100% { transform: scale(1); }
-    }
-
-    /* Stem */
-    .stem {
-      position: absolute;
-      bottom: -100px;
-      left: 50%;
-      width: 10px;
-      height: 100px;
-      background-color: #388e3c;
-      transform: translateX(-50%);
-      z-index: -1;
-      animation: grow 3s ease forwards;
-    }
-
-    @keyframes grow {
-      from { height: 0; }
-      to { height: 100px; }
-    }
-  </style>
-</head>
-<body>
-  <!-- Rose Structure -->
-  <div class="rose">
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="petal"></div>
-    <div class="center"></div>
-    <div class="stem"></div>
-  </div>
-</body>
-</html>
+<div class="container">
+<div class="droplet" id="no1"></div>
+<div class="droplet" id="no2"></div>
+<div class="droplet" id="no3"></div>
+<div class="droplet" id="no4"></div>
+<div class="droplet" id="no5"></div>
+<div class="droplet" id="no6"></div>
+<div class="droplet" id="no7"></div>
+<div class="droplet" id="no8"></div>
+<div class="droplet" id="no9"></div>
+<div class="droplet" id="no10"></div>
+  
+</div>
